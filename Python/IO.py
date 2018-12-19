@@ -1,0 +1,8 @@
+filename = input('Please input the filename: ')
+reader = open(filename, 'w')
+string = input('Please input the message you want to write in the file:\n')
+reader.write(string)
+reader.close()
+reader = open(filename, 'r')
+print('The message you just entered is: ', reader.readline())
+reader.close()
